@@ -1,6 +1,6 @@
 - name: Roles
   hosts: all
-  become: TRUE
+  become: True
   roles:
     - sample
 
