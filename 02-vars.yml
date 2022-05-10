@@ -32,8 +32,20 @@
 - name: Facts
   hosts: all
   vars:
-    ansible_distribution: TEST 
+    ansible_distribution: TEST
   tasks:
     - name: Print Fact
       ansible.builtin.debug:
         msg: OS Distribution = {{ ansible_distribution }}
+## Facts can be overwritten by the vars from user, Usually it is not a good practice.
+
+- name: Register a Variable
+  hosts: all
+  tasks:
+    - name: Uptime commands
+      ansible.builtin.shell: uptime
+      register: OUT
+
+    - name: Print OUT
+      ansible.builtin.debug:
+        msg: "{{OUT}}"
