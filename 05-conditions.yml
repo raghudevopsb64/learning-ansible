@@ -10,4 +10,4 @@
     - name: Print if a > 100
       debug:
         msg: Yes  a is greater than 100
-      when: a > "100"
+      when: a > 100
