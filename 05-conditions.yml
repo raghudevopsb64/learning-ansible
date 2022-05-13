@@ -1,5 +1,5 @@
 - name: Condition
-  host: localhost
+  hosts: localhost
   tasks:
     - name: Print if a == 10
       debug:
