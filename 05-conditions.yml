@@ -17,3 +17,9 @@
         msg: DevOps Course
       when: course == "DevOps"
 
+    # Boolean
+    - name: Print if variable x is true
+      debug:
+        msg: Yes True
+      when: x
+
