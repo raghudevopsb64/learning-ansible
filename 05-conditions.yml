@@ -1,8 +1,13 @@
 - name: Condition
   hosts: localhost
   tasks:
+    # Number comparion
     - name: Print if a == 10
       debug:
         msg: Yes  a is 10
       when: a == "10"
 
+    - name: Print if a > 10
+      debug:
+        msg: Yes  a is 10
+      when: a > "10"
