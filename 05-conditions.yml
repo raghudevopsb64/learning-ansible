@@ -7,7 +7,7 @@
         msg: Yes  a is 10
       when: a == "10"
 
-    - name: Print if a > 10
+    - name: Print if a > 100
       debug:
-        msg: Yes  a is greater than 10
-      when: a > "10"
+        msg: Yes  a is greater than 100
+      when: a > "100"
