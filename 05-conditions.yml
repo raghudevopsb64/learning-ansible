@@ -11,3 +11,9 @@
       debug:
         msg: Yes  a is greater than 100
       when: a | int > 100
+    # String Comparision
+    - name: DevOps Course
+      debug:
+        msg: DevOps Course
+      when: course == "DevOps"
+
