@@ -5,7 +5,7 @@
       loop:
         - apple
         - banana
-      import_role:
+      include_role:
         name: demo
 
 #    - name: Block
