@@ -1,3 +1,4 @@
 - name: Print
   debug:
-      msg: Hello
+      msg: Hello - {{item}}
+      
