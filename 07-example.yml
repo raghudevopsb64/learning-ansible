@@ -1,12 +1,19 @@
 - name: test
   hosts: localhost
   tasks:
-    - name: Block
+    - name: Include a role
       loop:
         - apple
         - banana
-      block:
-        - name: print1
-          debug:
-            msg: Name = {{item}}
+      import_role:
+        name: demo
+
+#    - name: Block
+#      loop:
+#        - apple
+#        - banana
+#      block:
+#        - name: print1
+#          debug:
+#            msg: Name = {{item}}
 
