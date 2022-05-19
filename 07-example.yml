@@ -1,0 +1,12 @@
+- name: test
+  hosts: localhost
+  tasks:
+    - name: Block
+      loop:
+        - apple
+        - banana
+      block:
+        - name: print1
+          debug:
+            msg: Name = {{item}}
+
